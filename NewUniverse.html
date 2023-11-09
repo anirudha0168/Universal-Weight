@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border-style: groove;
+            border-color: rgba(95, 158, 160, 0.452);
+            height:201px;
+            text-align: center;
+            border-radius: 40px;
+        }
+        .Mainh1{
+            color: aliceblue;
+            background-color: rgba(95, 88, 88, 0.42);
+            width: fit-content;
+            margin-left: 195px;
+        }
+        .box2{
+            border-color:rgba(95, 158, 160, 0.452);
+            border-style: groove;
+            margin-top: 30px;
+            border-radius: 40px;
+            height: 390px;
+        }
+        .a{
+            display: inline-block;
+            height: 125px;
+            width: 125px;
+            margin-top: 30px;
+            text-align: center;
+            color: aqua;
+            margin-left: 99px;
+        }
+        #a{
+            margin-left: 215px;
+            margin-top: 50px;
+            
+        }
+        .btn{
+            height: 20px;
+            width: 100px;
+            background-color:rgba(255, 255, 255, 0.861);
+            border-radius: 5px;
+            font-weight: lighter;
+        }
+        .LS{
+            background-color: rgba(171, 171, 172, 0.322);
+            border-radius: 5px;
+            font-size: large;
+            color: aliceblue;
+            }
+    </style>
+</head>
+<body style="background-image: url(https://wallpaperswide.com/download/alone_in_the_universe-wallpaper-2048x1152.jpg); background-size: 94%;">
+    <div class="box1">
+        <h1 class="Mainh1">TO KNOW ABOUT YOUR WEIGHT TO OTHER PLANETS</h1>
+        <label for="inp" style="color: aliceblue; background-color: rgba(95, 88, 88, 0.42); font-size: x-large;"> PLEASE ENTER YOUR WEIGHT</label>
+        <br><br>
+        <input type="number"  name="inp" id="inp" style="background-color: rgba(255, 255, 255, 0.963); font-weight: 500; height: 20px; width: 180px; text-align: center;" placeholder="Enter your weight"><br><br>
+        <button class="btn" onclick="CountWeight()">SUBMIT</button>
+    </div>
+    <div class="box2">
+        <div class="a">
+            <img src="Mercury.png" height="125px" width="125px">
+            <label for="a"  class="LS">Mercury </label>
+            <span id="mer" class="LS">:</span>
+        </div>
+        <div class="a">
+            <img src="Mars.png" height="125px" width="125px">
+            <label for="a" class="LS">Mars </label>
+            <span id="mars" class="LS">:</span>
+        </div>
+        <div class="a">
+            <img src="Jupiter.png" height="125px" width="125px">
+            <label for="a" class="LS">Jupiter </label>
+            <span id="jupiter" class="LS">:</span>
+        </div>
+        <div class="a">
+            <img src="Venus.png" height="125px" width="125px">
+            <label for="a" class="LS">Venus </label>
+            <span id="venus" class="LS">:</span>
+        </div>
+        <div class="a">
+            <img src="Uranus.png" height="125px" width="125px">
+            <label for="a" class="LS">Uranus </label>
+            <span id="uranus" class="LS">:</span>
+        </div><br>
+        <div class="a" id="a">
+            <img src="Neptune.png" height="125px" width="125px">
+            <label for="a" class="LS">Neptune </label>
+            <span id="neptune" class="LS">:</span>
+        </div>
+        <div class="a" id="a">
+            <img src="Pluto.png" height="125px" width="125px">
+            <label for="a" class="LS">Pluto </label>
+            <span id="pluto" class="LS">:</span>
+        </div>
+        <div class="a" id="a">
+            <img src="Moon.png" height="125px" width="125px">
+            <label for="a" class="LS">Moon </label>
+            <span id="moon" class="LS">:</span>
+        </div>
+    </div>
+    <script>
+        function CountWeight(){
+
+                        var kg = document.getElementById("inp").value;
+                        var mn = Math.trunc((kg/1)*0.377);
+                        document.getElementById("mer").innerHTML = `: ${mn}`;
+            
+                        var kg = document.getElementById("inp").value;
+                        var mn= Math.trunc((kg/1)*0.16);
+                        document.getElementById("moon").innerHTML = `: ${mn}`;     
+    
+                        var kg = document.getElementById("inp").value;
+                        var mn=Math.trunc((kg/1)*0.37);
+                        document.getElementById("mars").innerHTML = `: ${mn}`;
+                        
+                        var kg = document.getElementById("inp").value;
+                        var mn=Math.trunc((kg/1)*0.904);
+                        document.getElementById("venus").innerHTML = `: ${mn}`;    
+                        
+                        var kg = document.getElementById("inp").value;
+                        var mn=Math.trunc((kg/1)*0.886);
+                        document.getElementById("uranus").innerHTML = `: ${mn}`;     
+    
+                        var kg = document.getElementById("inp").value;
+                        var mn=Math.trunc((kg/1)*1.136);
+                        document.getElementById("neptune").innerHTML = `: ${mn}`;     
+    
+                        var kg = document.getElementById("inp").value;
+                        var mn=Math.trunc((kg/1)*0.06);
+                        document.getElementById("pluto").innerHTML = `: ${mn}`;     
+                        
+                        var kg = document.getElementById("inp").value;
+                        var mn=Math.trunc((kg/1)*2.527);
+                        document.getElementById("jupiter").innerHTML = `: ${mn}`;     
+    
+                        var kg = document.getElementById("inp").value;
+                        var mn=Math.trunc((kg/1)*1.06);
+                        document.getElementById("saturn").innerHTML = `: ${mn}`;     
+        }
+    </script>
+</body>
+
+</html>
